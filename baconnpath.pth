@@ -1,0 +1,7 @@
+# This .pth file takes for granted that SFM launches Python after the main
+# window is visible. If Valve changes things around, the strategy will have to
+# be changed.
+
+#Stolen from https://steamcommunity.com/sharedfiles/filedetails/?id=562830725
+
+import os, sys;sys.path.append(os.path.abspath(os.path.join(sys.exec_prefix, r'..\..\baconnmods')));__import__('referencestuff') if "sfm.exe" in sys.executable else None
