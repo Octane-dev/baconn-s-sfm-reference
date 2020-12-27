@@ -26,7 +26,7 @@ class Window(QtGui.QWidget):
         Phonon.createPath(self.media, self.video)
 
     # ------------- create buttons n shit --------------- #
-        
+        self.Volumesl = Phonon.VolumeSlider()
         self.Browse = QtGui.QPushButton("...")
         self.PauseButt = QtGui.QPushButton("Pause")
         self.Play = QtGui.QPushButton("Play")
@@ -38,11 +38,12 @@ class Window(QtGui.QWidget):
         self.slider.setSingleStep(36)
         layout = QtGui.QGridLayout(self)
         vbox = QtGui.QVBoxLayout()
-        layout.addWidget(self.video, 0, 0, 1, 3)
-        layout.addWidget(self.Browse, 2, 2)
-        layout.addWidget(self.slider, 2, 0, 1, 2)
+        layout.addWidget(self.video, 0, 0, 1, 0)
+        layout.addWidget(self.Browse, 2, 4)
+        layout.addWidget(self.slider, 2, 0, 1, 3, 0)
         layout.addWidget(self.PauseButt, 1, 0)
         layout.addWidget(self.Play, 1, 1)
+        layout.addWidget(self.Volumesl, 1, 2)
         layout.setRowStretch(0, 1)
 
     # ------------- connecting functions --------------- #
