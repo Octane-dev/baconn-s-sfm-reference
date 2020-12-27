@@ -5,4 +5,6 @@ Requires Python 2.7.5
 PySide 1.2.0
 Phonon
 
-What's left to work: update sfm PySide module somehow or define another up to date pyside version within python-packages on python folder.
+What's left to work: 
+- update sfm PySide module somehow or define another up to date pyside version within python-packages on python folder.
+- generate zip file containing installers and stuff
